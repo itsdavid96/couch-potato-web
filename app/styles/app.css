@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Raleway:ital,wght@0,400;1,300&family=Staatliches&display=swap');
-
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Raleway:ital,wght@0,400;1,300&family=Staatliches&display=swap");
 
 /**
  * Base Elements
@@ -25,39 +21,70 @@ div,
 span,
 a,
 button {
-  font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica,
+    Arial, sans-serif;
   line-height: 1.5;
 }
 
 body {
-    background: linear-gradient(#36535C, #0D1C16);
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    color: #fefefe;
+  background: linear-gradient(#36535c, #0d1c16);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #fefefe;
 }
 
-.nav-bar{
-  background-color: black;
+h1{
+  font-size: 3em;
+  text-align: center;
+}
+/**
+ * Navigation Bar Elements
+ */
+
+.nav-bar {
+  background-color: #0D1C16;
   display: flex;
   align-items: center;
   width: 100%;
   height: 100px;
   padding: 25px 25px;
 }
-.nav-bar h1{
-  font-family: 'Lobster Two', cursive;
-  font-size: 3em;
+.nav-bar h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 4em;
 }
 
-.nav-bar div{
+.nav-bar div {
   align-items: flex-end;
   margin-left: auto;
 }
 
-.inline{
+.inline {
   display: inline-block;
   margin-left: 25px;
+}
 
+/**
+ * Side Menu Elements
+ */
+
+.side-menu{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 250px;
+  height: 100%;
+  position: fixed;
+}
+
+.side-menu a{
+  padding: 25px;
+  font-size: 2.5em;
+  text-align: center;
+  display: block;
+  color: aliceblue;
+}
+.side-menu a:hover{
+    background-color: #87C6AF;
+    color: #0D1C16;
 }
