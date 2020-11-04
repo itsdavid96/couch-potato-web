@@ -10,4 +10,5 @@ Router.map(function() {
   this.route('sign-in');
   this.route('sign-up');
   this.route('bookmarks');
+  this.route('my-settings');
 });

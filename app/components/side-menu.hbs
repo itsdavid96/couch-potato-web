@@ -1,7 +1,8 @@
 <div class="side-menu">
     {{!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> --}}
-    <a href="#">Discover</a>
-    <a href="#">Bookmarks</a>
-    <a href="#">My Account</a>
+    <LinkTo @route="index">Discover</LinkTo>
+    <LinkTo @route="bookmarks">Bookmarks</LinkTo>
+    <LinkTo @route="sign-in">My Account</LinkTo>
+  
     {{yield}}
 </div>
