@@ -14,14 +14,14 @@
     font-size: 4em;
     line-height: normal;
     display: block;
-    margin-top: 30px;
     text-align: center;
   }
   /*Controls full container of submission boxes*/
   .container{
     display:flex ;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-evenly;
+    height: 50%;
   }
   .clearfix{
     display:flex ;
@@ -44,6 +44,23 @@
     border: none;
     background: linear-gradient(#36535c, #0d1c16);
   }
+  a{
+    color: #fefefe;
+  }
+  .input{
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .sign-button{
+    margin-top: 20px;
+     display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 15px;
+  }
+  .button{
+    width: 33%;
+  }
 </style>
 
 <div class="sign-up">
@@ -53,23 +70,30 @@
 
     <h1 class="picture-label">Couch Potato</h1>
   </div>
-  <form class="modal-content" action="/action_page.php">
-    <div class="container">
+    
 
-      <input type="text" placeholder="First Name" name="first-name" required>
-      <input type="text" placeholder="Last Name" name="last-name" required>
-      <input type="email" placeholder="Email" name="email" required>
-      <input type="password" placeholder="Create a Password" name="psw" required>
+  <div class="ui input">
+    <input type="text" placeholder="First Name...">
+  </div>
+  <div class="ui input">
+    <input type="text" placeholder="Last Name...">
+  </div>
+  <div class="ui input">
+    <input type="email" placeholder="Email...">
+  </div>
+  <div class="ui input">
+    <input type="password" placeholder="Password...">
+  </div>
 
+    
+  <div class="sign-button">
+      <button type="submit" class="ui teal button"><b>Register</b></button>
+  </div>
+  <div class="link">
 
-      <div class="clearfix">
-        <button type="submit" class="signupbtn"><b>Register</b></button>
-      </div>
-    </div>
-  </form>
+    <LinkTo @route="sign-in"><p><u>Already have an account? Log in here.</u></p></LinkTo>
 
-
-
+  </div>
 
 
   {{outlet}}
