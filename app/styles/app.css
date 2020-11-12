@@ -21,8 +21,7 @@ div,
 span,
 a,
 button {
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica,
-    Arial, sans-serif;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -35,13 +34,18 @@ body {
   color: #fefefe;
 }
 
-h1{
+h1 {
   font-size: 3em;
   text-align: center;
 }
 /**
  * Navigation Bar Elements
  */
+.barsicon {
+  background-color: #0D1C16;
+  border: none;
+  color: #fefefe;
+}
 
 .nav-bar {
   background-color: #0D1C16;
@@ -51,40 +55,61 @@ h1{
   height: 100px;
   padding: 25px 25px;
 }
-.nav-bar h1 {
-  font-family: "Lobster Two", cursive;
-  font-size: 4em;
-}
 
-.nav-bar div {
-  align-items: flex-end;
-  margin-left: auto;
-}
+  .nav-bar h1 {
+    font-family: "Lobster Two", cursive;
+    font-size: 4em;
+  }
+
+
+  .nav-bar div {
+    align-items: flex-end;
+    margin-left: auto;
+  }
 
 .inline {
   display: inline-block;
   margin-left: 25px;
 }
 
+.center {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
 /**
  * Side Menu Elements
  */
 
-.side-menu{
+.side-menu {
   background-color: rgba(0, 0, 0, 0.5);
   width: 250px;
   height: 100%;
+  margin-top: 100px;
   position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.side-menu a{
-  padding: 25px;
-  font-size: 2.5em;
-  text-align: center;
-  display: block;
-  color: aliceblue;
-}
-.side-menu a:hover{
-    background-color: #87C6AF;
-    color: #0D1C16;
-}
+
+  .side-menu a {
+    padding: 25px;
+    font-size: 2.5em;
+    text-align: center;
+    display: block;
+    color: aliceblue;
+    transition: 0.3s;
+  }
+
+    .side-menu a:hover {
+      background-color: #87C6AF;
+      color: #0D1C16;
+    }
