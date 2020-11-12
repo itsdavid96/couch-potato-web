@@ -6,15 +6,64 @@
     color: #fefefe;
     margin-top: 10%;
   }
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ui input{
+    width: 25%; margin-bottom: 25px;
+  }
+  .frame{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .img-holder{
+    width: 150px;
+  }
+  .center{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .button{
+    width: 33%;
+  }
+  .sign-button{
+    margin-top: 20px;
+     display:flex;
+    align-items:center;
+    justify-content:center;
+  }
 </style>
 
-
-<h1>
-  Sign In
-</h1>
-<div class=" signup-button">
-  <LinkTo @route="sign-up"><p>Not registered yet? Sign up here</p></LinkTo>
+<div class="container">
+  <h1>
+    Sign In
+  </h1>
+  <div class="frame">
+    <div class="img-holder">
+      <img class="center" height="150px" src="/assets/images/spuds.png" alt="Couch Potato" />
+    </div>
+  </div>
+  <h2>Username</h2>
+  <div class="ui input">
+  <input type="text" placeholder="Username...">
+  </div>
+  <h2>Password</h2>
+  <div class="ui input">
+  <input width="200px" type="password" placeholder="Password...">
+  </div>
+  <div class="sign-button">
+    <button class="ui teal button" type="submit">Sign In</button>
+  </div>
+  <div class=" signup-button">
+    <LinkTo @route="sign-up"><p><u>Not registered yet? Sign up here</u></p></LinkTo>
+  </div>
 </div>
-
-
 {{outlet}}
