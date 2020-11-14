@@ -16,7 +16,9 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    torii: {
+      sessionServiceName: 'session'
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -46,6 +48,8 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
+
+    ENV.TMBD_ACCESS_TOKEN = '4517228c3cc695f9dfa1dcb4c4979152';
 
   return ENV;
 };
