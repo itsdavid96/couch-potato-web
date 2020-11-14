@@ -12,9 +12,7 @@ export default class DiscoverTileComponent extends Component {
         .then((result)=>{
             return result.json();
         })
-        .then((data) =>){
-            
-        }
+        
 
         // return 'https://api.themoviedb.org/3/movie/550?api_key=4517228c3cc695f9dfa1dcb4c4979152';
     }
