@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   overflow: hidden;
@@ -40,6 +41,7 @@ h1 {
   font-size: 3em;
   text-align: center;
 }
+
 /**
  * Navigation Bar Elements
  */
@@ -58,16 +60,16 @@ h1 {
   padding: 25px 25px;
 }
 
-  .nav-bar h1 {
-    font-family: "Lobster Two", cursive;
-    font-size: 4em;
-  }
+.nav-bar h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 4em;
+}
 
 
-  .nav-bar div {
-    align-items: flex-end;
-    margin-left: auto;
-  }
+.nav-bar div {
+  align-items: flex-end;
+  margin-left: auto;
+}
 
 .inline {
   display: inline-block;
@@ -116,6 +118,44 @@ h1 {
   color: #0D1C16;
 }
 
+/* Bookmarks */
+.bookmark-frame {
+  padding: 0 1.2em;
+  background-color: transparent;
+  position: fixed;
+  top: 175px;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.bookmark-container {
+  background-color: #36535C;
+  display: inline-block;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.movie-img {
+  background-color: #87C6AF;
+  width: 35%;
+  height: 150px;
+  float: left;
+}
+
+.movie-info {
+  width: auto;
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.icon-container {
+  padding-top: 10px;
+  padding-right: 5px;
+  float: right;
+  width: fit-content;
+}
+
 /* Index.hbs css properties */
 /* grid for holding movies */
 .movie-container{
@@ -142,4 +182,5 @@ h1 {
 .discover-tile img{
   width: 150px;
   height: 250px;
+
 }
