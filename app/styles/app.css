@@ -8,7 +8,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  overflow: hidden;
+ }
 body,
 h1,
 h2,
@@ -100,16 +102,44 @@ h1 {
 }
 
 
-  .side-menu a {
-    padding: 25px;
-    font-size: 2.5em;
-    text-align: center;
-    display: block;
-    color: aliceblue;
-    transition: 0.3s;
-  }
+.side-menu a {
+  padding: 25px;
+  font-size: 2.5em;
+  text-align: center;
+  display: block;
+  color: aliceblue;
+  transition: 0.3s;
+}
 
-    .side-menu a:hover {
-      background-color: #87C6AF;
-      color: #0D1C16;
-    }
+.side-menu a:hover {
+  background-color: #87C6AF;
+  color: #0D1C16;
+}
+
+/* Index.hbs css properties */
+/* grid for holding movies */
+.movie-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 50px 50px;
+  padding: 20px 75px;
+  height: 100vh;
+  width: 100vw; 
+  overflow-y: scroll;
+
+}
+
+/* styling for movie poster discover tile. */
+
+.discover-tile{
+  background-color: rgba(0,0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  height: 300px;
+  width: 150px;
+}
+
+.discover-tile img{
+  width: 150px;
+  height: 250px;
+}

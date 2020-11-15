@@ -1,11 +1,21 @@
-{{yield}}
-<div class="map">
+
+<div class="discover-tile">
   <img
-    alt="Movie Poster for {{@lat}},{{@lng}}"
+    alt="Movie Poster for {{@title}}"
     ...attributes
-    src={{this.src}}
-    
+
+    src="/assets/images/mononokePoster.jpg"
     width="75px" 
     height="150px"
   >
+  <div>
+    Princsee Monoke
+    {{!-- {{@title}} --}}
+  </div>
+  <div>
+    October 29, 1999
+
+    {{!-- {{@date}} --}}
+  </div>
+  {{yield}}
 </div>
