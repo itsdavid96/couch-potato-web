@@ -160,7 +160,7 @@ h1 {
 /* grid for holding movies */
 .movie-container{
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 50px 50px;
   padding: 20px 75px;
   height: 100vh;
@@ -175,8 +175,9 @@ h1 {
   background-color: rgba(0,0, 0, 0.3);
   border: 1px solid rgba(0, 0, 0, 0.8);
   text-align: center;
-  height: 300px;
   width: 150px;
+  height: 250px;
+
 }
 
 .discover-tile img{

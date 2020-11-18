@@ -6,20 +6,7 @@ let configData=null;
 let letBaseImgUrl=null;
 
 export default class DiscoverTileComponent extends Component {
-    get src(){
-        let url = '${TMDB_API}/configuration?api_key=${this.token}';
-        fetch(url)
-        .then((result)=>{
-            return result.json();
-        })
-        
-
-        // return 'https://api.themoviedb.org/3/movie/550?api_key=4517228c3cc695f9dfa1dcb4c4979152';
-    }
-    get token(){
-        return encodeURIComponent(ENV.TMDB_ACCESS_TOKEN);
-
-    }
+  
 }
 
 
